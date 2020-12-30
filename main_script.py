@@ -31,3 +31,4 @@ if season_number>1:
 for root, dirs, files in os.walk(dummy_series_path):
     for filename in files:
         """NEW CODE SHOULD BE HERE THAT RENAME FILES ACCORDING TO NUMBER OF EPISODES AND NUMBER OF SEASONS"""
+        #CODE HERE*
