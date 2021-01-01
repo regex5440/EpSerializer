@@ -50,3 +50,5 @@ for root, dirs, files in os.walk(dummy_series_path):
     for filename,newName in zip(files,newNames):
         nameChanger(filename,newName)
         print(filename,'Rename =>',newName)
+
+#ADD FEATURE TO WORK WITH SINGLE SEASONS
