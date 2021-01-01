@@ -52,3 +52,4 @@ for root, dirs, files in os.walk(dummy_series_path):
         print(filename,'Rename =>',newName)
 
 #ADD FEATURE TO WORK WITH SINGLE SEASONS
+#test comment 2
