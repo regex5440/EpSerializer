@@ -49,4 +49,4 @@ t.sleep(1)
 for root, dirs, files in os.walk(dummy_series_path):
     for filename,newName in zip(files,newNames):
         nameChanger(filename,newName)
-        print(filename,'Rename =>',newNames)
+        print(filename,'Rename =>',newName)
