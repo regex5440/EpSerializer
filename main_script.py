@@ -3,7 +3,7 @@
 import os
 import time as t
 
-# This variable will get the current location of the script, in which it has been moved to
+
 directory=os.path.dirname(__file__)
 
 # WARNING: DO NOT REMOVE UNLESS REAL TIME EXECUTION!
