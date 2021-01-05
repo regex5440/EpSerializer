@@ -34,13 +34,18 @@ else:
 
 # new name list of names as per the information provided by user
 newNames=list()
-for season_number in range(seasons):
-    for episode_number in range(no_of_episode_per_season[season_number]):
-        newNames.append("S{0:0=2d}E{1:0=2d}".format(season_number+1,episode_number+1))
+if seasons>1:
+    for season_number in range(seasons):
+        for episode_number in range(no_of_episode_per_season[season_number]):
+            newNames.append("S{0:0=2d}E{1:0=2d}".format(season_number+1,episode_number+1))
+elif seasons==1:
+    for _ in range(1,no_of_files_in_directory+1):
+        newNames.append("S01E{0:0=2d}".format(_))
+else:
+    print("Issues while naming files")
 
 def nameChanger(source, newName): # Takes the old and new filenames only and rename in actual
     os.rename(os.path.join(dummy_series_path,source),os.path.join(dummy_series_path,newName))
-
 
 print("Checking Files...")
 t.sleep(1)
