@@ -48,14 +48,13 @@ else:
   @var seasons -> type int [For folder containing files of different seasons]
   @var no_of_episode_per_season -> type list [Every Element in list denotes the number of epsiode in it's (index+1) season relatively]
 """
+print("Checking Files...")
+t.sleep(1)
 #======================================================================================================
 
 # Function to rename files
 def nameChanger(source, newName): # Takes the old and new filenames only and rename in actual
     os.rename(os.path.join(current_directory,source),os.path.join(current_directory,newName))
-#======================================================================================================
-print("Checking Files...")
-t.sleep(1)
 
 #======================================================================================================
 # This function traverse through the files in a serial manner in the current directory
